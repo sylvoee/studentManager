@@ -1,0 +1,15 @@
+/*body {*/
+/*    font-size: 13px;*/
+/*}*/
+
+/*.main {*/
+/*    font-size: calc(0.6rem + 1vw);*/
+/*    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;*/
+/*}*/
+
+#registerStudent input,
+.login input {
+    border: 3px solid blue;
+}
+
+
