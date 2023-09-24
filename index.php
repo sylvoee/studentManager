@@ -22,7 +22,7 @@ include('include/connection.php');
    include('include/header.php');
     ?>
 
-  <div class="container mt-5">
+  <div class="container mt-2">
 
   <div class="main row">
 
@@ -31,14 +31,17 @@ include('include/connection.php');
   <div class="search col-sm-12">
 
 <div class="search">
-
-<form class="form-inline pt-2" action="index.php" method = "POST">
+    
+   <form class="form-inline pt-2" action="index.php" method = "POST">
 <div class="col-sm-9 offset-1">
 <input type="text" class="form-control " name = "search" placeholder = "search student by name, email, unique ID,or tutor group">
 <button type="submit" name = "searchBtn" class="btn form-control">Search For student</button>
 </div>
 
 </form>
+    
+
+
 
 <?php
 include('include/connection.php');
@@ -135,7 +138,7 @@ position: sticky; left: 7%;">FORENAME</th> <th class = "text-light text-center" 
         echo <<<TEXT
         
 <tr><td class = "bg-secondary text-light" style = "position: -webkit-sticky; position: sticky; left:0;">{$id}</td><td class ="bg-dark text-light" 
-style = "position: -webkit-sticky; position: sticky; left: 7%;">{$surname}</td> <td class ="text-center">{$tutor}</td><td class = "">{$email}</td>
+style = "position: -webkit-sticky; position: sticky; left: 7%;">{$forename}</td> <td class ="text-center">{$tutor}</td><td class = "">{$email}</td>
 <td class =""><a href = "profile.php?q={$id}" 
 class="text-decoration-none">{$forename}'s profile</a href = "profile/{$id}"></td> <td class = "">{$surname}</td> <td class ="">{$time}</td> </tr>
       
